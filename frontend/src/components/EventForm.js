@@ -2,8 +2,8 @@ import {
   Form,
   redirect,
   useActionData,
-  useNavigate,
   useNavigation,
+  useNavigate,
 } from "react-router";
 
 import classes from "./EventForm.module.css";
@@ -83,7 +83,6 @@ function EventForm({ method, event }) {
 export default EventForm;
 
 export async function action({ request, params }) {
-  console.log("form action");
   const method = request.method;
   const data = await request.formData();
 
